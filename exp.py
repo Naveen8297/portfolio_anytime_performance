@@ -21,7 +21,7 @@ names = [
         "multipeak",
     ]
 names += ["sphere", "doublelinearslope"]  #, "stepdoublelinearslope"]
-names += ["cigar", "altcigar", "ellipsoid", "altellipsoid", "stepellipsoid", "discus", "bentcigar"]
+names += ["cigar", "altcigar", "ellipsoid", "altellipsoid", "discus", "bentcigar"] #"stepellipsoid",
 names += ["deceptiveillcond", "deceptivepath"]   #list of objective functions
 
 #algorithms = ["ECMA"] #["CMandAS2", "ECMA", "Cobyla", "MetaModel", "CMA", "DiagonalCMA", "FCMA", "BOBYQA", "F127CMA", "Powell", "SQP"]
