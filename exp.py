@@ -7,7 +7,7 @@ from ioh import logger
 from nevergrad import functions
 import nevergrad as ng
 
-dimension = 20
+dimension = 10
 
 names = [
         "hm",
@@ -25,9 +25,10 @@ names += ["cigar", "altcigar", "ellipsoid", "altellipsoid", "stepellipsoid", "di
 names += ["deceptiveillcond", "deceptivepath"]   #list of objective functions
 
 #algorithms = ["ECMA"] #["CMandAS2", "ECMA", "Cobyla", "MetaModel", "CMA", "DiagonalCMA", "FCMA", "BOBYQA", "F127CMA", "Powell", "SQP"]
-algorithms = ["CMA", "DiagonalCMA", "FCMA"]
+#algorithms = ["CMA", "DiagonalCMA", "FCMA"]
+algorithms = ["BOBYQA","ECMA","F127CMA"]
 
-budget = 1000 #[10, 100, 1000]
+budget = 10000 #[10, 100, 1000]
 
 def param(dimension):
     x = ng.p.Array(shape=(dimension,))
@@ -40,7 +41,7 @@ def main():
         for algo in algorithms:
             l = logger.Analyzer(root=r"data_new/data_"+name, folder_name="run", algorithm_name = algo)
             f.attach_logger(l)		
-            for runs in range(10):
+            for runs in range(25):
                 optim = ng.optimizers.registry[algo](parametrization=param(dimension), budget=budget)
                 for u in range(budget):
                     x1 = optim.ask()
