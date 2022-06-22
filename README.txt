@@ -1,6 +1,6 @@
-Single algorithm experiments- exp_single_algo
+Single algorithm experiments- exp_single_algo.py
 
-Simulation of parallelism- combination_auc
+Simulation of parallelism- combination_auc.ipynb
 
 Tuning across all functions- dir: auc_tuning_overall: irace_files, code for running changed configs, code for auc calculation and plotting heatmaps 
 
