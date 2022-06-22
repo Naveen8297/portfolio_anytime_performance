@@ -1,0 +1,13 @@
+testInstancesDir = ""
+trainInstancesDir = ""
+testInstancesFile = 'test.txt'
+trainInstancesFile = 'train.txt'
+nbIterations=3
+minNbsurvival=3
+maxExperiments=5000 
+boundMax=12800
+parallel=32 
+testType='f-test' 
+seed = 0
+targetRunner = "trunner.sh"
+firstTest = 5
