@@ -74,7 +74,7 @@ It compares the AUC values for single algorithms versus combinations to analyze 
 
 ---
 
-### 3. `parallel2.py`
+### 3. `parallel2.py` (in auc_tuning_perfn or auc_tuning_overall)
 
 This script is designed to work with **irace**, a tool for **automatic algorithm configuration**. The primary purpose of this script is to run various **optimization algorithms** (such as **CMA-ES** and **PSO**) with different hyperparameter configurations and find the **best-performing configuration** for each algorithm. The configurations are evaluated based on their performance on a suite of **benchmark functions** from the **Nevergrad** and **IOHanalyzer** libraries.
 
@@ -108,7 +108,7 @@ This script is designed to work with **irace**, a tool for **automatic algorithm
 
 ---
 
-### 4. `trunner.sh`
+### 4. `trunner.sh` (in auc_tuning_perfn or auc_tuning_overall)
 
 This **shell script** serves as the **experiment runner** for **irace**, responsible for launching the **parallel2.py** script with the hyperparameter configurations provided by **irace**. 
 The script handles the setup, execution, and result extraction from the parallel optimization experiments, allowing **irace** to efficiently explore the search space of hyperparameters and identify the best-performing configuration.
