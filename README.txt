@@ -1,7 +1,3 @@
-Here is the combined **README** file with all sections included:
-
----
-
 # README
 
 ## Introduction
